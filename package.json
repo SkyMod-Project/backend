@@ -1,0 +1,20 @@
+{
+  "name": "scratch-auth-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun index.js",
+    "watch": "bun --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@fastify/cookie": "^9.1.0",
+    "@fastify/view": "^8.2.0",
+    "ejs": "^3.1.9",
+    "fastify": "^4.24.3",
+    "jose": "^5.0.1"
+  }
+}
