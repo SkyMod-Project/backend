@@ -1,18 +1,11 @@
 import Fastify from 'fastify';
 import FastifyCookie from '@fastify/cookie';
-import FastifyView from '@fastify/view';
-import ejs from 'ejs';
 import * as jose from 'jose';
 
 const fastify = Fastify({
     /* logger: true */
 });
 fastify.register(FastifyCookie, {});
-fastify.register(FastifyView, {
-    engine: {
-        ejs
-    }
-});
 
 const cookieOptions = {
     path: '/',
